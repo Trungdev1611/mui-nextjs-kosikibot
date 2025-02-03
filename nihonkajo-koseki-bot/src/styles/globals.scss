@@ -1,0 +1,16 @@
+$primary-color: #ffffff;
+
+body {
+  background-color: $primary-color;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.MuiStack-root {
+  padding-top: 0 !important;
+  flex: auto;
+  overflow: visible !important;
+}
+
+input:focus-visible {
+  outline: unset !important;
+}

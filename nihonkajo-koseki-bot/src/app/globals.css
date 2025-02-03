@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+*/
+
+/*
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+.login-form .ant-form-item-required::before {
+  content: '';
+}
+
+nextjs-portal {
+  display: none;
+}
+
+
+.login-form  button[disabled=disabled], button:disabled {
+  background-color: #CBDEF6 !important;
+}
+
+.input-section  button[disabled=disabled], button:disabled {
+  background-color: #F6F7F9 !important;
+  color: #E5E5E5 !important;
+}
+
+.menu-chat .ant-menu-item {
+  padding-left: 24px !important;
+}
+
+.menu-chat .ant-menu-title-content {
+  margin-left: 10px
+}
+.menu-chat .ant-menu-submenu:not(:first-child) {
+  margin-top: 28px !important;
+}
+
+.menu-chat .ant-menu-submenu:first-child {
+  margin-top: 20px !important;
+}
+
+.input-ant-disable-effect .ant-input:hover {
+    border-color: grey;  
+   
+}
+
+.input-ant-disable-effect  .ant-input:focus {
+  border-color: #F6F7F9;  
+  -webkit-box-shadow: 0 0 0 1px grey;  
+  box-shadow: 0 0 0 1px grey;  
+}
+
